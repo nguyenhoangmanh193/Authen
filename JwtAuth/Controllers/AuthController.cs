@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -81,6 +82,34 @@ namespace JwtAuth.Controllers
 
             return Ok("Password changed successfully.");
         }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("list-users")]
+        public async Task<IActionResult> GetUsers(
+            [FromQuery] string? search = null,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 10)
+            {
+              if (page <= 0) page = 1;
+              if (pageSize <= 0) pageSize = 10;
+
+            var query = authService.QueryUsersByRole("User");
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(u => u.Username.Contains(search));
+            }
+
+            var users = await query
+                .OrderBy(u => u.Username)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return Ok(users);
+        }
+
 
 
 

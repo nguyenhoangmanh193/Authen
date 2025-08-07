@@ -11,5 +11,6 @@ namespace JwtAuth.Services
         Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto refresh );
         Task<bool> LogoutAsync(Guid userId);
         Task<IdentityResult> ChangePasswordAsync(Guid userId, ChangePasswordDto dto);
+        IQueryable<ListUserResponseDto> QueryUsersByRole(string role = "User");
     }
 }

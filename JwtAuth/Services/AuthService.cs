@@ -71,7 +71,7 @@ namespace JwtAuth.Services
             {
                 return false; // User not found
             }
-            user.RefreshToken = null;
+            user.RefreshTokenHash = null;
             user.RefreshTokenTimeExpire = null;
 
             await context.SaveChangesAsync();
@@ -105,6 +105,18 @@ namespace JwtAuth.Services
         }
 
 
+        public async Task<List<ListUserResponseDto>> GetAllUsersAsync()
+        {
+            return await context.Users
+                .Where(u => u.Role == "User")
+                .Select(u => new ListUserResponseDto
+                {
+                    Id = u.Id,
+                    Username = u.Username,                
+                })
+                .ToListAsync();
+        }
+
         private string CreateToken(User user)
         {
             var claims = new List<Claim>
@@ -123,7 +135,7 @@ namespace JwtAuth.Services
                 issuer: configuration.GetValue<string>("AppSettings:Issuer"),
                 audience: configuration.GetValue<string>("AppSettings:Audience"),
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(1),
+                expires: DateTime.UtcNow.AddHours(1),
                 signingCredentials: creds
             );
 
@@ -134,8 +146,16 @@ namespace JwtAuth.Services
         private async Task<User?> ValidateRefreshTokenAsync(Guid userId, string refreshToken)
         {
             var user = await context.Users.FindAsync(userId);
-            if (user is null || user.RefreshToken != refreshToken ||
+            if (user is null || user.RefreshTokenHash != refreshToken ||
                 user.RefreshTokenTimeExpire <= DateTime.UtcNow)
+            {
+                return null;
+            }
+
+            var refreshTokenHash = HashToken(refreshToken);
+
+            if (user.RefreshTokenHash != refreshTokenHash || 
+                user.RefreshTokenTimeExpire < DateTime.UtcNow)
             {
                 return null;
             }
@@ -152,20 +172,30 @@ namespace JwtAuth.Services
                 return Convert.ToBase64String(randomNumber);
             }
         }
+        private string HashToken(string token)
+        {
+            using var sha = SHA256.Create();
+            var bytes = Encoding.UTF8.GetBytes(token);
+            var hash = sha.ComputeHash(bytes);
+            return Convert.ToBase64String(hash);
+        }
 
         private async Task<string?> GenerateSaveRefreshToken(User user)
         {
             var refreshToken = GenerateRefreshToken();
-            user.RefreshToken = refreshToken;
-            user.RefreshTokenTimeExpire = DateTime.Now.AddDays(7); // Set expiration for 7 days
+
+            var refreshTokenHash = HashToken(refreshToken);
+
+            user.RefreshTokenHash = refreshTokenHash;
+            user.RefreshTokenTimeExpire = DateTime.UtcNow.AddHours(1); // Set expiration for 7 days
             await context.SaveChangesAsync();
-            return refreshToken;
+            return refreshTokenHash;
         }
 
         public async Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto request)
         {
-            var user = await ValidateRefreshTokenAsync(request.UserId, request.RefreshToken);
-            if( user is null)
+            var user = await ValidateRefreshTokenAsync(request.UserId, request.RefreshTokenHash);
+            if (user is null)
             {
                 return null;
             }
@@ -173,6 +203,19 @@ namespace JwtAuth.Services
             return await CreateTokenResponse(user);
 
         }
+
+        public IQueryable<ListUserResponseDto> QueryUsersByRole(string role = "User")
+        {
+            return context.Users
+                .Where(u => u.Role == role)
+                .Select(u => new ListUserResponseDto
+                {
+                    Id = u.Id,
+                    Username = u.Username
+                });
+        }
+
+
     }
 
 }
