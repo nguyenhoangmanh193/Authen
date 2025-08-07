@@ -21,7 +21,7 @@ namespace JwtAuth.Controllers
         public static User user = new();
 
         [HttpPost("register")]
-        public async Task<ActionResult<User>> Register(UserDto request)
+        public async Task<ActionResult<UserDto>> Register(UserDto request)
         {
 
             var user = await authService.RegisterAsync(request);
@@ -44,11 +44,55 @@ namespace JwtAuth.Controllers
         }
 
         [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if ( userIdClaim == null || !Guid.TryParse(userIdClaim, out Guid userId))
+            {
+                return Unauthorized("Invalid token");
+            }
+
+            var result = await authService.LogoutAsync(userId);
+            if (!result)
+            {
+                return NotFound("User not found");
+            }
+
+            return Ok("Logged out successfully");
+        }
+
+        [Authorize]
+        [HttpPut("/{id}/password")]
+        public async Task<IActionResult> ChangePassword(Guid id, ChangePasswordDto dto)
+        {
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null || userIdClaim != id.ToString())
+            {
+                return Forbid("You can only change your own password.");
+            }
+
+            var result = await authService.ChangePasswordAsync(id, dto);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors.Select(e => e.Description));
+            }
+
+            return Ok("Password changed successfully.");
+        }
+
+
+
+
+
+        [Authorize]
         [HttpGet]
         public IActionResult AuthenticationOnlyEndpoint()
         {
             return Ok("This endpoint is Authited");
         }
+
 
         [Authorize(Roles ="Admin")]
         [HttpGet("admin")]
@@ -68,6 +112,8 @@ namespace JwtAuth.Controllers
 
             return Ok(result);
         }
+
+
 
 
     }

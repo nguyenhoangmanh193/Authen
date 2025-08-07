@@ -1,6 +1,27 @@
 [
   {
     "ContainingType": "JwtAuth.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "{id}/password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "JwtAuth.Models.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtAuth.Controllers.AuthController",
     "Method": "AuthenticationOnlyEndpoint",
     "RelativePath": "api/Auth",
     "HttpMethod": "GET",
@@ -47,6 +68,16 @@
   },
   {
     "ContainingType": "JwtAuth.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtAuth.Controllers.AuthController",
     "Method": "RefreshToken",
     "RelativePath": "api/Auth/refresh-token",
     "HttpMethod": "POST",
@@ -87,7 +118,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "JwtAuth.Entities.User",
+        "Type": "JwtAuth.Models.UserDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

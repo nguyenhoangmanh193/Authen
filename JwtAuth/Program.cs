@@ -1,10 +1,9 @@
-using JwtAuth.Data;
+
 using JwtAuth.Services;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
+
 using Scalar.AspNetCore;
-using System.Text;
+
+using JwtAuth.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,24 +13,9 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddDbContext<UserDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("UserDatabase")));
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Appsettings:Issuer"],
-            ValidAudience = builder.Configuration["Appsettings:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Appsettings:Token"]!))
-        };
-    });
+builder.Services
+    .AddDatabase(builder.Configuration)
+    .AddJwtAuthentication(builder.Configuration);
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
@@ -46,6 +30,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

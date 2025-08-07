@@ -12,8 +12,10 @@ using System.Text;
 
 namespace JwtAuth.Services
 {
-    public class AuthService(UserDbContext context, IConfiguration configuration) : IAuthService
+    public class AuthService(UserDbContext context, IConfiguration configuration
+       ) : IAuthService
     {
+        
         public async Task<TokenResponseDto?> LoginAsync(UserDto request)
         {
             var user = await context.Users.FirstOrDefaultAsync(u => u.Username == request.Username);
@@ -62,6 +64,47 @@ namespace JwtAuth.Services
             return user;
         }
 
+        public async Task<bool> LogoutAsync(Guid userId)
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user is null)
+            {
+                return false; // User not found
+            }
+            user.RefreshToken = null;
+            user.RefreshTokenTimeExpire = null;
+
+            await context.SaveChangesAsync();
+            return true; // Logout successful
+        }
+
+        public async Task<IdentityResult> ChangePasswordAsync(Guid userId, ChangePasswordDto dto)
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "User not found" });
+            }
+
+            
+            var passwordHasher = new PasswordHasher<User>();
+            var verificationResult = passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
+
+            if (verificationResult == PasswordVerificationResult.Failed)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Current password is incorrect" });
+            }
+
+           
+            user.PasswordHash = passwordHasher.HashPassword(user, dto.NewPassword);
+
+           
+            await context.SaveChangesAsync();
+
+            return IdentityResult.Success;
+        }
+
+
         private string CreateToken(User user)
         {
             var claims = new List<Claim>
@@ -80,7 +123,7 @@ namespace JwtAuth.Services
                 issuer: configuration.GetValue<string>("AppSettings:Issuer"),
                 audience: configuration.GetValue<string>("AppSettings:Audience"),
                 claims: claims,
-                expires: DateTime.Now.AddHours(4),
+                expires: DateTime.UtcNow.AddMinutes(1),
                 signingCredentials: creds
             );
 

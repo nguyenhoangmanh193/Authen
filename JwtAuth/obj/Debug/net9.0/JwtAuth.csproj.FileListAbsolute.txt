@@ -164,3 +164,4 @@ C:\Users\ADMIN\source\repos\JwtAuth\JwtAuth\bin\Debug\net9.0\runtimes\win\lib\ne
 C:\Users\ADMIN\source\repos\JwtAuth\JwtAuth\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ADMIN\source\repos\JwtAuth\JwtAuth\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ADMIN\source\repos\JwtAuth\JwtAuth\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ADMIN\source\repos\JwtAuth\JwtAuth\obj\Debug\net9.0\JwtAuth.sourcelink.json
