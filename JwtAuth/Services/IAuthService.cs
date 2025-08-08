@@ -13,5 +13,6 @@ namespace JwtAuth.Services
         Task<IdentityResult> ChangePasswordAsync(Guid userId, ChangePasswordDto dto);
         IQueryable<ListUserResponseDto> QueryUsersByRole(string role = "User");
         Task<bool> DeleteUserAsync(Guid userId);
+        Task<bool> LockUsersAsync(List<Guid> userIds);
     }
 }

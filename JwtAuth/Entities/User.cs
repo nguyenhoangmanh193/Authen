@@ -10,5 +10,9 @@ namespace JwtAuth.Entities
         public string Role { get; set; } =  "User";
         public string? RefreshTokenHash { get; set; }
         public DateTime? RefreshTokenTimeExpire { get; set; }
+
+        public bool IsActive { get; set; } = true;  // default is active
+        public bool IsLocked { get; set; } = false; // default is not locked
+        public DateTime? LockoutEnd { get; set; } 
     }
 }

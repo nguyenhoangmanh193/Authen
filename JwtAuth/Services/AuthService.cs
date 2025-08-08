@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using EFCore.BulkExtensions;
 
 namespace JwtAuth.Services
 {
@@ -23,6 +24,14 @@ namespace JwtAuth.Services
             {
                 return null; // User not found
             }
+
+            // Check if account is locked
+            if (user.IsLocked && user.LockoutEnd.HasValue && user.LockoutEnd > DateTime.UtcNow)
+            {
+                // Account is temporarily locked
+                throw new Exception($"Account is locked until {user.LockoutEnd.Value:u}");
+            }
+
             if (new PasswordHasher<User>()
                 .VerifyHashedPassword(user, user.PasswordHash, request.Password)
                 == PasswordVerificationResult.Failed)
@@ -30,9 +39,9 @@ namespace JwtAuth.Services
                 return null; // Invalid password
             }
 
-       
+            var token = await CreateTokenResponse(user);
 
-            return await CreateTokenResponse(user); ;
+            return token; 
 
         }
 
@@ -127,6 +136,34 @@ namespace JwtAuth.Services
 
             context.Users.Remove(user);
             await context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> LockUsersAsync(List<Guid> userIds)
+        {
+            //var users = await context.Users
+            //    .Where(u => userIds.Contains(u.Id))
+            //    .ToListAsync();
+
+            //if (users.Count == 0)
+            //    return false;
+
+            //foreach (var user in users)
+            //{
+            //    user.IsLocked = true;
+            //    user.LockoutEnd = DateTime.UtcNow.AddDays(7); // Lock 7 day
+            //}
+
+            //await context.SaveChangesAsync();
+            var usersToUpdate = userIds.Select(id => new User
+            {
+                Id = id,
+                IsLocked = true,
+                LockoutEnd = DateTime.UtcNow.AddDays(7)
+            }).ToList();
+
+            await context.BulkUpdateAsync(usersToUpdate);
+
             return true;
         }
 

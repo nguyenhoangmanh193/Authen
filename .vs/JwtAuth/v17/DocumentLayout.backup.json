@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\listuserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\models\\listuserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\lockusersrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\models\\lockusersrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +25,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\listuserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\models\\listuserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|solutionrelative:jwtauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81297E58-3321-4652-9956-210BAC885A8D}|JwtAuth\\JwtAuth.csproj|c:\\users\\admin\\source\\repos\\jwtauth\\jwtauth\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,6 +110,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
@@ -113,82 +121,56 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LockUsersRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\LockUsersRequestDto.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Models\\LockUsersRequestDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\LockUsersRequestDto.cs",
+              "RelativeToolTip": "JwtAuth\\Models\\LockUsersRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T06:24:35.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Services\\AuthService.cs*",
               "RelativeToolTip": "JwtAuth\\Services\\AuthService.cs*",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAcwH0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAKAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T07:59:20.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "JwtAuth\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAQwHEAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JwtAuth\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T08:39:23.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListUserResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\ListUserResponseDto.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Models\\ListUserResponseDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\ListUserResponseDto.cs",
-              "RelativeToolTip": "JwtAuth\\Models\\ListUserResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T16:59:29.226Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\UserDto.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Models\\UserDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\UserDto.cs",
-              "RelativeToolTip": "JwtAuth\\Models\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T08:37:37.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Entities\\User.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Entities\\User.cs",
               "RelativeToolTip": "JwtAuth\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T08:23:32.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TokenResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\TokenResponseDto.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Models\\TokenResponseDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\TokenResponseDto.cs",
-              "RelativeToolTip": "JwtAuth\\Models\\TokenResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T18:45:21.685Z"
+              "WhenOpened": "2025-07-31T08:23:32.667Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -196,16 +178,16 @@
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Services\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Services\\IAuthService.cs*",
-              "RelativeToolTip": "JwtAuth\\Services\\IAuthService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Services\\IAuthService.cs",
+              "RelativeToolTip": "JwtAuth\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T07:58:49.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ChangePasswordDto.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\ChangePasswordDto.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Models\\ChangePasswordDto.cs",
@@ -213,11 +195,12 @@
               "RelativeToolTip": "JwtAuth\\Models\\ChangePasswordDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T03:06:44.893Z"
+              "WhenOpened": "2025-08-07T03:06:44.893Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\EntityConfigurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "JwtAuth\\EntityConfigurations\\UserConfiguration.cs",
@@ -225,59 +208,12 @@
               "RelativeToolTip": "JwtAuth\\EntityConfigurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T08:55:17.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Data\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Data\\UserDbContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Data\\UserDbContext.cs",
-              "RelativeToolTip": "JwtAuth\\Data\\UserDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:15:35.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "JwtAuth\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Properties\\launchSettings.json",
-              "RelativeToolTip": "JwtAuth\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-01T02:35:16.216Z"
+              "WhenOpened": "2025-08-07T08:55:17.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RefreshTokenRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\RefreshTokenRequestDto.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Models\\RefreshTokenRequestDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\RefreshTokenRequestDto.cs",
-              "RelativeToolTip": "JwtAuth\\Models\\RefreshTokenRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T18:50:54.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Program.cs",
-              "RelativeDocumentMoniker": "JwtAuth\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Program.cs",
-              "RelativeToolTip": "JwtAuth\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T02:07:01.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\appsettings.json",
               "RelativeDocumentMoniker": "JwtAuth\\appsettings.json",
@@ -285,11 +221,103 @@
               "RelativeToolTip": "JwtAuth\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-01T06:53:46.536Z"
+              "WhenOpened": "2025-08-01T06:53:46.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Program.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Program.cs",
+              "RelativeToolTip": "JwtAuth\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T02:07:01.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TokenResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\TokenResponseDto.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Models\\TokenResponseDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\TokenResponseDto.cs",
+              "RelativeToolTip": "JwtAuth\\Models\\TokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T18:45:21.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\UserDto.cs",
+              "RelativeToolTip": "JwtAuth\\Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T08:37:37.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListUserResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\ListUserResponseDto.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Models\\ListUserResponseDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\ListUserResponseDto.cs",
+              "RelativeToolTip": "JwtAuth\\Models\\ListUserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:59:29.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Data\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Data\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Data\\UserDbContext.cs",
+              "RelativeToolTip": "JwtAuth\\Data\\UserDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:15:35.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "JwtAuth\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Properties\\launchSettings.json",
+              "RelativeToolTip": "JwtAuth\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-01T02:35:16.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "JwtAuth\\Models\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "JwtAuth\\Models\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T18:50:54.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Extensions\\ServiceCollectionExtensions.cs",
@@ -297,11 +325,12 @@
               "RelativeToolTip": "JwtAuth\\Extensions\\ServiceCollectionExtensions.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T14:29:13.882Z"
+              "WhenOpened": "2025-08-06T14:29:13.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Migrations\\UserDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Migrations\\UserDbContextModelSnapshot.cs",
@@ -309,11 +338,12 @@
               "RelativeToolTip": "JwtAuth\\Migrations\\UserDbContextModelSnapshot.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:49:33.243Z"
+              "WhenOpened": "2025-08-01T07:49:33.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "20250803173022_AddUserRole.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Migrations\\20250803173022_AddUserRole.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Migrations\\20250803173022_AddUserRole.cs",
@@ -321,23 +351,25 @@
               "RelativeToolTip": "JwtAuth\\Migrations\\20250803173022_AddUserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T17:30:37.522Z"
+              "WhenOpened": "2025-08-03T17:30:37.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20250801074909_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Migrations\\20250801074909_InitialCreate.cs",
               "RelativeDocumentMoniker": "JwtAuth\\Migrations\\20250801074909_InitialCreate.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\Migrations\\20250801074909_InitialCreate.cs",
               "RelativeToolTip": "JwtAuth\\Migrations\\20250801074909_InitialCreate.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:49:23.269Z"
+              "WhenOpened": "2025-08-01T07:49:23.269Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\appsettings.Development.json",
               "RelativeDocumentMoniker": "JwtAuth\\appsettings.Development.json",
@@ -345,11 +377,12 @@
               "RelativeToolTip": "JwtAuth\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-01T06:53:45.644Z"
+              "WhenOpened": "2025-08-01T06:53:45.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "libman.json",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\libman.json",
               "RelativeDocumentMoniker": "JwtAuth\\libman.json",
@@ -357,11 +390,12 @@
               "RelativeToolTip": "JwtAuth\\libman.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-01T07:29:24.651Z"
+              "WhenOpened": "2025-08-01T07:29:24.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "JwtAuth.http",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\JwtAuth.http",
               "RelativeDocumentMoniker": "JwtAuth\\JwtAuth.http",
@@ -369,7 +403,8 @@
               "RelativeToolTip": "JwtAuth\\JwtAuth.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-08-01T02:05:28.282Z"
+              "WhenOpened": "2025-08-01T02:05:28.282Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -36,12 +36,20 @@ namespace JwtAuth.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<TokenResponseDto>> Login(UserDto request)
         {
-            var result = await authService.LoginAsync(request);
-            if (result == null)
+            try
             {
-                return BadRequest("Invalid credentials");
+                var result = await authService.LoginAsync(request);
+                if (result == null)
+                {
+                    return BadRequest("Invalid credentials");
+                }
+                return Ok(result);
             }
-            return Ok(result);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
 
         [Authorize]
@@ -127,6 +135,24 @@ namespace JwtAuth.Controllers
 
             return NoContent(); 
         }
+
+        
+        [Authorize(Roles = "Admin")]
+        [HttpPost("lock-user")]
+        public async Task<IActionResult> BulkLockUsers([FromBody] LockUsersRequestDto request)
+        {
+            if (request.UserIds == null || request.UserIds.Count == 0)
+                return BadRequest("UserIds list is empty.");
+
+            var result = await authService.LockUsersAsync(request.UserIds);
+
+            if (!result)
+                return NotFound("No users found to lock.");
+
+            return Ok("Users locked successfully.");
+        }
+
+
 
 
 

@@ -68,6 +68,22 @@
   },
   {
     "ContainingType": "JwtAuth.Controllers.AuthController",
+    "Method": "BulkLockUsers",
+    "RelativePath": "api/Auth/lock-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JwtAuth.Models.LockUsersRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JwtAuth.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
