@@ -117,6 +117,19 @@ namespace JwtAuth.Services
                 .ToListAsync();
         }
 
+        public async Task<bool> DeleteUserAsync(Guid userId)
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            context.Users.Remove(user);
+            await context.SaveChangesAsync();
+            return true;
+        }
+
         private string CreateToken(User user)
         {
             var claims = new List<Claim>
@@ -146,16 +159,14 @@ namespace JwtAuth.Services
         private async Task<User?> ValidateRefreshTokenAsync(Guid userId, string refreshToken)
         {
             var user = await context.Users.FindAsync(userId);
-            if (user is null || user.RefreshTokenHash != refreshToken ||
-                user.RefreshTokenTimeExpire <= DateTime.UtcNow)
+            if (user is null ||   user.RefreshTokenTimeExpire <= DateTime.UtcNow)
             {
                 return null;
             }
 
             var refreshTokenHash = HashToken(refreshToken);
 
-            if (user.RefreshTokenHash != refreshTokenHash || 
-                user.RefreshTokenTimeExpire < DateTime.UtcNow)
+            if (user.RefreshTokenHash != refreshTokenHash      )
             {
                 return null;
             }
@@ -172,6 +183,7 @@ namespace JwtAuth.Services
                 return Convert.ToBase64String(randomNumber);
             }
         }
+
         private string HashToken(string token)
         {
             using var sha = SHA256.Create();
@@ -189,7 +201,7 @@ namespace JwtAuth.Services
             user.RefreshTokenHash = refreshTokenHash;
             user.RefreshTokenTimeExpire = DateTime.UtcNow.AddHours(1); // Set expiration for 7 days
             await context.SaveChangesAsync();
-            return refreshTokenHash;
+            return refreshToken;
         }
 
         public async Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto request)

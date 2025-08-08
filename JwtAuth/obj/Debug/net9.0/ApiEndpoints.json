@@ -153,5 +153,15 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "JwtAuth.Controllers.AuthController",
+    "Method": "DeleteMyAccount",
+    "RelativePath": "delete-account",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

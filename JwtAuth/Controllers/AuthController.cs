@@ -110,7 +110,23 @@ namespace JwtAuth.Controllers
             return Ok(users);
         }
 
+        [Authorize]
+        [HttpDelete("/delete-account")] 
+        public async Task<IActionResult> DeleteMyAccount()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+                return Unauthorized(new { Message = "Invalid token" });
 
+            if (!Guid.TryParse(userIdClaim.Value, out var userId))
+                return Unauthorized(new { Message = "Invalid user ID in token" });
+
+            var result = await authService.DeleteUserAsync(userId);
+            if (!result)
+                return NotFound(new { Message = "User not found" });
+
+            return NoContent(); 
+        }
 
 
 
