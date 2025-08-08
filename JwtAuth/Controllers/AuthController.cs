@@ -32,6 +32,12 @@ namespace JwtAuth.Controllers
             }
             return Ok(user);
         }
+        [HttpGet("test")]
+        public async Task<ActionResult<string>> Test()
+        {
+            // This is just a test endpoint to verify the API is working
+            return Ok("API is working");
+        }
 
         [HttpPost("login")]
         public async Task<ActionResult<TokenResponseDto>> Login(UserDto request)

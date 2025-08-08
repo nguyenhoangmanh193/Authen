@@ -172,6 +172,26 @@
   },
   {
     "ContainingType": "JwtAuth.Controllers.AuthController",
+    "Method": "Test",
+    "RelativePath": "api/Auth/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JwtAuth.Controllers.AuthController",
     "Method": "DeleteMyAccount",
     "RelativePath": "delete-account",
     "HttpMethod": "DELETE",

@@ -162,7 +162,14 @@ namespace JwtAuth.Services
                 LockoutEnd = DateTime.UtcNow.AddDays(7)
             }).ToList();
 
-            await context.BulkUpdateAsync(usersToUpdate);
+            await context.BulkUpdateAsync(usersToUpdate, new BulkConfig
+            {
+                PropertiesToInclude = new List<string>
+                  {
+                    nameof(User.IsLocked),
+                    nameof(User.LockoutEnd)
+                  }
+            });
 
             return true;
         }
