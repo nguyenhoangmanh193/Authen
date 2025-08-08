@@ -120,7 +120,7 @@
               "RelativeDocumentMoniker": "JwtAuth\\.gitignore",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\JwtAuth\\JwtAuth\\.gitignore",
               "RelativeToolTip": "JwtAuth\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAABkBAAAAAAAAAAAQwC8BAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-08-08T08:07:27.245Z",
               "EditorCaption": ""
@@ -135,8 +135,7 @@
               "RelativeToolTip": "JwtAuth\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAK0AAAAAAAAAAADwv8UAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T08:39:23.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T08:39:23.021Z"
             },
             {
               "$type": "Document",
@@ -220,8 +219,7 @@
               "RelativeToolTip": "JwtAuth\\Services\\AuthService.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAAAAAKgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:59:20.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T07:59:20.987Z"
             },
             {
               "$type": "Document",
