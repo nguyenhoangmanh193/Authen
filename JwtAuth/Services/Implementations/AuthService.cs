@@ -10,10 +10,11 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using EFCore.BulkExtensions;
+using JwtAuth.Services.Interfaces;
 
-namespace JwtAuth.Services
+namespace JwtAuth.Services.Implementations
 {
-    public class AuthService(UserDbContext context, IConfiguration configuration
+    public class AuthService(AppDbContext context, IConfiguration configuration
        ) : IAuthService
     {
         
@@ -270,6 +271,8 @@ namespace JwtAuth.Services
                     Username = u.Username
                 });
         }
+
+
 
 
     }

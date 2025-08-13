@@ -1,9 +1,8 @@
-
-using JwtAuth.Services;
-
-using Scalar.AspNetCore;
-
+using JwtAuth.Data;
 using JwtAuth.Extensions;
+using JwtAuth.Services.Implementations;
+using JwtAuth.Services.Interfaces;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +16,18 @@ builder.Services
     .AddDatabase(builder.Configuration)
     .AddJwtAuthentication(builder.Configuration);
 
+
+
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbSeeder.Seed(db);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

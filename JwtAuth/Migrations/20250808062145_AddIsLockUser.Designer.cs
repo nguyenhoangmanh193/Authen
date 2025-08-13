@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JwtAuth.Migrations
 {
-    [DbContext(typeof(UserDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250808062145_AddIsLockUser")]
     partial class AddIsLockUser
     {

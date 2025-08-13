@@ -2,7 +2,7 @@
 
 namespace JwtAuth.Entities
 {
-    public class User 
+    public class User  : General
     {
         public Guid Id { get; set; }
         public string Username { get; set; } = string.Empty;
@@ -14,5 +14,7 @@ namespace JwtAuth.Entities
         public bool IsActive { get; set; } = true;  // default is active
         public bool IsLocked { get; set; } = false; // default is not locked
         public DateTime? LockoutEnd { get; set; } 
+
+        public string test { get; set; } = "test"; // Example property for testing purposes
     }
 }

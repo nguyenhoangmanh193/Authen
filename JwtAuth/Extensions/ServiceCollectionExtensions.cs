@@ -10,7 +10,9 @@ namespace JwtAuth.Extensions
     {
         public static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<UserDbContext>(options =>
+
+            services.AddHttpContextAccessor();
+            services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("UserDatabase")));
             return services;
         }

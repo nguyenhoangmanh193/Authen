@@ -1,6 +1,6 @@
 ﻿using JwtAuth.Entities;
 using JwtAuth.Models;
-using JwtAuth.Services;
+using JwtAuth.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;

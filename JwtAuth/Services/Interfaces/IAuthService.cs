@@ -2,7 +2,7 @@
 using JwtAuth.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace JwtAuth.Services
+namespace JwtAuth.Services.Interfaces
 {
     public interface IAuthService
     {
@@ -14,5 +14,9 @@ namespace JwtAuth.Services
         IQueryable<ListUserResponseDto> QueryUsersByRole(string role = "User");
         Task<bool> DeleteUserAsync(Guid userId);
         Task<bool> LockUsersAsync(List<Guid> userIds);
+
+
+
+        // 
     }
 }
